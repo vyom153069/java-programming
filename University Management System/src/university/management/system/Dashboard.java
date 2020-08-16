@@ -1,6 +1,7 @@
 
 package university.management.system;
 
+
 import java.awt.Color;
 
 import javax.swing.JPanel;
@@ -26,96 +27,56 @@ public class Dashboard extends javax.swing.JFrame {
     private void initComponents() {
 
         header = new javax.swing.JPanel();
-        IconMinMaxClose = new javax.swing.JPanel();
-        ButtonClose = new javax.swing.JPanel();
-        close = new javax.swing.JLabel();
-        ButtonMax = new javax.swing.JPanel();
-        max = new javax.swing.JLabel();
-        ButtonMin = new javax.swing.JPanel();
-        min = new javax.swing.JLabel();
+        Heading = new javax.swing.JLabel();
         menu = new javax.swing.JPanel();
         MenuIcons = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        MenuHide = new javax.swing.JPanel();
+        ExitTab = new javax.swing.JLabel();
+        DetailTab = new javax.swing.JLabel();
+        AttendanceTab = new javax.swing.JLabel();
+        AttendanceDetailTab = new javax.swing.JLabel();
+        ExamTab = new javax.swing.JLabel();
+        UpdateTab = new javax.swing.JLabel();
+        FeeTab = new javax.swing.JLabel();
+        MoreTab = new javax.swing.JLabel();
+        AboutTab = new javax.swing.JLabel();
+        MenuTab = new javax.swing.JLabel();
         Dashboard = new javax.swing.JPanel();
+        tab1 = new javax.swing.JPanel();
+        addBtn1 = new javax.swing.JButton();
+        addBtn2 = new javax.swing.JButton();
+        tab2 = new javax.swing.JPanel();
+        DetailBtn1 = new javax.swing.JButton();
+        DetailBtn2 = new javax.swing.JButton();
+        tab3 = new javax.swing.JPanel();
+        AttendanceBtn1 = new javax.swing.JButton();
+        AttendanceBtn2 = new javax.swing.JButton();
+        tab4 = new javax.swing.JPanel();
+        AttendanceDetailBtn1 = new javax.swing.JButton();
+        AttendanceDetailBtn2 = new javax.swing.JButton();
+        tab5 = new javax.swing.JPanel();
+        ExamDetailBtn = new javax.swing.JButton();
+        MarksBtn = new javax.swing.JButton();
+        tab6 = new javax.swing.JPanel();
+        UpdateBtn1 = new javax.swing.JButton();
+        UpdateBtn2 = new javax.swing.JButton();
+        tab7 = new javax.swing.JPanel();
+        FeeBtn1 = new javax.swing.JButton();
+        FormBtn2 = new javax.swing.JButton();
+        tab8 = new javax.swing.JPanel();
+        Notepad = new javax.swing.JButton();
+        Calculator = new javax.swing.JButton();
+        Browser = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         header.setBackground(new java.awt.Color(15, 19, 52));
         header.setPreferredSize(new java.awt.Dimension(800, 50));
-        header.setLayout(new java.awt.BorderLayout());
+        header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        IconMinMaxClose.setBackground(new java.awt.Color(15, 19, 52));
-        IconMinMaxClose.setPreferredSize(new java.awt.Dimension(150, 50));
-        IconMinMaxClose.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        ButtonClose.setBackground(new java.awt.Color(15, 19, 52));
-        ButtonClose.setPreferredSize(new java.awt.Dimension(50, 50));
-        ButtonClose.setLayout(new java.awt.BorderLayout());
-
-        close.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
-        close.setForeground(new java.awt.Color(255, 255, 255));
-        close.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        close.setText("X");
-        close.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                closeMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                closeMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                closeMouseExited(evt);
-            }
-        });
-        ButtonClose.add(close, java.awt.BorderLayout.CENTER);
-
-        IconMinMaxClose.add(ButtonClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, -1, -1));
-
-        ButtonMax.setBackground(new java.awt.Color(15, 19, 52));
-        ButtonMax.setPreferredSize(new java.awt.Dimension(50, 50));
-        ButtonMax.setLayout(new java.awt.BorderLayout());
-
-        max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        max.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/imax.jpg"))); // NOI18N
-        max.setPreferredSize(new java.awt.Dimension(5, 5));
-        max.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                maxMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                maxMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                maxMouseExited(evt);
-            }
-        });
-        ButtonMax.add(max, java.awt.BorderLayout.CENTER);
-
-        IconMinMaxClose.add(ButtonMax, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, -1, -1));
-
-        ButtonMin.setBackground(new java.awt.Color(15, 19, 52));
-        ButtonMin.setPreferredSize(new java.awt.Dimension(50, 50));
-        ButtonMin.setLayout(new java.awt.BorderLayout());
-
-        min.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        min.setForeground(new java.awt.Color(255, 255, 255));
-        min.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        min.setText("_");
-        ButtonMin.add(min, java.awt.BorderLayout.CENTER);
-
-        IconMinMaxClose.add(ButtonMin, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        header.add(IconMinMaxClose, java.awt.BorderLayout.LINE_END);
+        Heading.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        Heading.setForeground(new java.awt.Color(0, 102, 102));
+        Heading.setText("DASHBOARD");
+        header.add(Heading, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 166, -1));
 
         getContentPane().add(header, java.awt.BorderLayout.PAGE_START);
 
@@ -123,93 +84,534 @@ public class Dashboard extends javax.swing.JFrame {
         menu.setLayout(new java.awt.BorderLayout());
 
         MenuIcons.setBackground(new java.awt.Color(15, 19, 52));
-        MenuIcons.setPreferredSize(new java.awt.Dimension(50, 450));
+        MenuIcons.setPreferredSize(new java.awt.Dimension(270, 450));
         MenuIcons.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/exit.jpg"))); // NOI18N
-        jLabel4.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, -1, -1));
+        ExitTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        ExitTab.setForeground(new java.awt.Color(255, 255, 255));
+        ExitTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/exit.jpg"))); // NOI18N
+        ExitTab.setText("    Exit");
+        ExitTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        ExitTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ExitTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(ExitTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 270, -1));
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/menu.jpg"))); // NOI18N
-        jLabel5.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        DetailTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        DetailTab.setForeground(new java.awt.Color(255, 255, 255));
+        DetailTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/i.jpg"))); // NOI18N
+        DetailTab.setText("    Details");
+        DetailTab.setToolTipText("");
+        DetailTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        DetailTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DetailTabMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                DetailTabMouseEntered(evt);
+            }
+        });
+        MenuIcons.add(DetailTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 270, -1));
 
-        jLabel6.setFont(new java.awt.Font("Rage Italic", 0, 48)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("i");
-        jLabel6.setToolTipText("");
-        jLabel6.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
+        AttendanceTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        AttendanceTab.setForeground(new java.awt.Color(255, 255, 255));
+        AttendanceTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/attend.png"))); // NOI18N
+        AttendanceTab.setText("   Attendance");
+        AttendanceTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        AttendanceTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AttendanceTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(AttendanceTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 270, -1));
 
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/attend.png"))); // NOI18N
-        jLabel7.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
+        AttendanceDetailTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        AttendanceDetailTab.setForeground(new java.awt.Color(255, 255, 255));
+        AttendanceDetailTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/attendance details.jpg"))); // NOI18N
+        AttendanceDetailTab.setText("   Attendance Detail");
+        AttendanceDetailTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        AttendanceDetailTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AttendanceDetailTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(AttendanceDetailTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 270, -1));
 
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/attendance details.jpg"))); // NOI18N
-        jLabel8.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
+        ExamTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        ExamTab.setForeground(new java.awt.Color(255, 255, 255));
+        ExamTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/exams.jpg"))); // NOI18N
+        ExamTab.setText("   Examination");
+        ExamTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        ExamTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ExamTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(ExamTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 270, -1));
 
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/exams.jpg"))); // NOI18N
-        jLabel9.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, -1, -1));
+        UpdateTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        UpdateTab.setForeground(new java.awt.Color(255, 255, 255));
+        UpdateTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/update.jpg"))); // NOI18N
+        UpdateTab.setText("    Update Details");
+        UpdateTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        UpdateTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                UpdateTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(UpdateTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 270, -1));
 
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/update.jpg"))); // NOI18N
-        jLabel10.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, -1, -1));
+        FeeTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        FeeTab.setForeground(new java.awt.Color(255, 255, 255));
+        FeeTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/feess.png"))); // NOI18N
+        FeeTab.setText("    Fee");
+        FeeTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        FeeTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FeeTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(FeeTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 270, -1));
 
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/feess.png"))); // NOI18N
-        jLabel11.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
+        MoreTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        MoreTab.setForeground(new java.awt.Color(255, 255, 255));
+        MoreTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/more.jpg"))); // NOI18N
+        MoreTab.setText("     Utility");
+        MoreTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        MoreTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MoreTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(MoreTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 270, -1));
 
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/more.jpg"))); // NOI18N
-        jLabel12.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, -1, -1));
+        AboutTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        AboutTab.setForeground(new java.awt.Color(255, 255, 255));
+        AboutTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/about.jpg"))); // NOI18N
+        AboutTab.setText("    About Us");
+        AboutTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        AboutTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AboutTabMouseClicked(evt);
+            }
+        });
+        MenuIcons.add(AboutTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 270, -1));
 
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/about.jpg"))); // NOI18N
-        jLabel13.setPreferredSize(new java.awt.Dimension(50, 50));
-        MenuIcons.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, -1, -1));
+        MenuTab.setFont(new java.awt.Font("Sitka Text", 1, 22)); // NOI18N
+        MenuTab.setForeground(new java.awt.Color(255, 255, 255));
+        MenuTab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/menu.jpg"))); // NOI18N
+        MenuTab.setText("    Menu");
+        MenuTab.setPreferredSize(new java.awt.Dimension(50, 50));
+        MenuTab.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MenuTabMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                MenuTabMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                MenuTabMouseExited(evt);
+            }
+        });
+        MenuIcons.add(MenuTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 270, 50));
 
         menu.add(MenuIcons, java.awt.BorderLayout.LINE_START);
-
-        MenuHide.setBackground(new java.awt.Color(25, 29, 74));
-
-        javax.swing.GroupLayout MenuHideLayout = new javax.swing.GroupLayout(MenuHide);
-        MenuHide.setLayout(MenuHideLayout);
-        MenuHideLayout.setHorizontalGroup(
-            MenuHideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-        MenuHideLayout.setVerticalGroup(
-            MenuHideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-        );
-
-        menu.add(MenuHide, java.awt.BorderLayout.CENTER);
 
         getContentPane().add(menu, java.awt.BorderLayout.LINE_START);
 
         Dashboard.setBackground(new java.awt.Color(73, 128, 242));
+        Dashboard.setPreferredSize(new java.awt.Dimension(547, 450));
+        Dashboard.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout DashboardLayout = new javax.swing.GroupLayout(Dashboard);
-        Dashboard.setLayout(DashboardLayout);
-        DashboardLayout.setHorizontalGroup(
-            DashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 564, Short.MAX_VALUE)
+        tab1.setBackground(new java.awt.Color(15, 19, 42));
+        tab1.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        addBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        addBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        addBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        addBtn1.setText("New Faculty");
+        addBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBtn1ActionPerformed(evt);
+            }
+        });
+
+        addBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        addBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        addBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        addBtn2.setText("New Student");
+        addBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBtn2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab1Layout = new javax.swing.GroupLayout(tab1);
+        tab1.setLayout(tab1Layout);
+        tab1Layout.setHorizontalGroup(
+            tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab1Layout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(addBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(addBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(118, Short.MAX_VALUE))
         );
-        DashboardLayout.setVerticalGroup(
-            DashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+        tab1Layout.setVerticalGroup(
+            tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab1Layout.createSequentialGroup()
+                .addContainerGap(209, Short.MAX_VALUE)
+                .addGroup(tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(183, 183, 183))
         );
+
+        Dashboard.add(tab1, "card2");
+
+        tab2.setBackground(new java.awt.Color(15, 19, 42));
+        tab2.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        DetailBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        DetailBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        DetailBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        DetailBtn1.setLabel("Student ");
+        DetailBtn1.setMaximumSize(new java.awt.Dimension(115, 27));
+        DetailBtn1.setMinimumSize(new java.awt.Dimension(115, 27));
+        DetailBtn1.setPreferredSize(new java.awt.Dimension(115, 27));
+        DetailBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DetailBtn1ActionPerformed(evt);
+            }
+        });
+
+        DetailBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        DetailBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        DetailBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        DetailBtn2.setLabel("Teacher ");
+        DetailBtn2.setPreferredSize(new java.awt.Dimension(128, 127));
+        DetailBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DetailBtn2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab2Layout = new javax.swing.GroupLayout(tab2);
+        tab2.setLayout(tab2Layout);
+        tab2Layout.setHorizontalGroup(
+            tab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab2Layout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(DetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(DetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
+        tab2Layout.setVerticalGroup(
+            tab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab2Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(tab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+
+        Dashboard.add(tab2, "card2");
+
+        tab3.setBackground(new java.awt.Color(15, 19, 42));
+        tab3.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        AttendanceBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        AttendanceBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        AttendanceBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        AttendanceBtn1.setLabel("Student");
+        AttendanceBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AttendanceBtn1ActionPerformed(evt);
+            }
+        });
+
+        AttendanceBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        AttendanceBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        AttendanceBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        AttendanceBtn2.setLabel("Teacher");
+        AttendanceBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AttendanceBtn2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab3Layout = new javax.swing.GroupLayout(tab3);
+        tab3.setLayout(tab3Layout);
+        tab3Layout.setHorizontalGroup(
+            tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab3Layout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(AttendanceBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(AttendanceBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(124, Short.MAX_VALUE))
+        );
+        tab3Layout.setVerticalGroup(
+            tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab3Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(AttendanceBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AttendanceBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addContainerGap(202, Short.MAX_VALUE))
+        );
+
+        AttendanceBtn1.getAccessibleContext().setAccessibleName("");
+
+        Dashboard.add(tab3, "card2");
+
+        tab4.setBackground(new java.awt.Color(15, 19, 42));
+        tab4.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        AttendanceDetailBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        AttendanceDetailBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        AttendanceDetailBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        AttendanceDetailBtn1.setLabel("Student");
+        AttendanceDetailBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AttendanceDetailBtn1ActionPerformed(evt);
+            }
+        });
+
+        AttendanceDetailBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        AttendanceDetailBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        AttendanceDetailBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        AttendanceDetailBtn2.setText("Teacher");
+        AttendanceDetailBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AttendanceDetailBtn2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab4Layout = new javax.swing.GroupLayout(tab4);
+        tab4.setLayout(tab4Layout);
+        tab4Layout.setHorizontalGroup(
+            tab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab4Layout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(AttendanceDetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(AttendanceDetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(119, Short.MAX_VALUE))
+        );
+        tab4Layout.setVerticalGroup(
+            tab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab4Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(tab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AttendanceDetailBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                    .addComponent(AttendanceDetailBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addGap(163, 163, 163))
+        );
+
+        Dashboard.add(tab4, "card3");
+
+        tab5.setBackground(new java.awt.Color(15, 19, 42));
+        tab5.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        ExamDetailBtn.setBackground(new java.awt.Color(0, 102, 102));
+        ExamDetailBtn.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        ExamDetailBtn.setForeground(new java.awt.Color(255, 255, 255));
+        ExamDetailBtn.setText("Exam Details");
+        ExamDetailBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExamDetailBtnActionPerformed(evt);
+            }
+        });
+
+        MarksBtn.setBackground(new java.awt.Color(0, 102, 102));
+        MarksBtn.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        MarksBtn.setForeground(new java.awt.Color(255, 255, 255));
+        MarksBtn.setText("Enter Marks");
+        MarksBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MarksBtnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab5Layout = new javax.swing.GroupLayout(tab5);
+        tab5.setLayout(tab5Layout);
+        tab5Layout.setHorizontalGroup(
+            tab5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab5Layout.createSequentialGroup()
+                .addGap(125, 125, 125)
+                .addComponent(ExamDetailBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(MarksBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(119, Short.MAX_VALUE))
+        );
+        tab5Layout.setVerticalGroup(
+            tab5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab5Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(tab5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MarksBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ExamDetailBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(160, 160, 160))
+        );
+
+        Dashboard.add(tab5, "card2");
+
+        tab6.setBackground(new java.awt.Color(15, 19, 42));
+        tab6.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        UpdateBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        UpdateBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        UpdateBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        UpdateBtn1.setText("Update Student");
+        UpdateBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdateBtn1ActionPerformed(evt);
+            }
+        });
+
+        UpdateBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        UpdateBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        UpdateBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        UpdateBtn2.setText("Update Teacher");
+        UpdateBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdateBtn2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab6Layout = new javax.swing.GroupLayout(tab6);
+        tab6.setLayout(tab6Layout);
+        tab6Layout.setHorizontalGroup(
+            tab6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab6Layout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(UpdateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(UpdateBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(119, Short.MAX_VALUE))
+        );
+        tab6Layout.setVerticalGroup(
+            tab6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab6Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(tab6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(UpdateBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                    .addComponent(UpdateBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addGap(137, 137, 137))
+        );
+
+        Dashboard.add(tab6, "card2");
+
+        tab7.setBackground(new java.awt.Color(15, 19, 42));
+        tab7.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        FeeBtn1.setBackground(new java.awt.Color(0, 102, 102));
+        FeeBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        FeeBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        FeeBtn1.setText("Fee Structure");
+        FeeBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeeBtn1ActionPerformed(evt);
+            }
+        });
+
+        FormBtn2.setBackground(new java.awt.Color(0, 102, 102));
+        FormBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        FormBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        FormBtn2.setText("Fee Form");
+        FormBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FormBtn2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab7Layout = new javax.swing.GroupLayout(tab7);
+        tab7.setLayout(tab7Layout);
+        tab7Layout.setHorizontalGroup(
+            tab7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab7Layout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(FeeBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(FormBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(119, Short.MAX_VALUE))
+        );
+        tab7Layout.setVerticalGroup(
+            tab7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab7Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(tab7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FeeBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                    .addComponent(FormBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addGap(183, 183, 183))
+        );
+
+        Dashboard.add(tab7, "card2");
+
+        tab8.setBackground(new java.awt.Color(15, 19, 42));
+        tab8.setPreferredSize(new java.awt.Dimension(547, 450));
+
+        Notepad.setBackground(new java.awt.Color(0, 102, 102));
+        Notepad.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        Notepad.setForeground(new java.awt.Color(255, 255, 255));
+        Notepad.setText("Notepad");
+        Notepad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NotepadActionPerformed(evt);
+            }
+        });
+
+        Calculator.setBackground(new java.awt.Color(0, 102, 102));
+        Calculator.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        Calculator.setForeground(new java.awt.Color(255, 255, 255));
+        Calculator.setText("Calculator");
+        Calculator.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CalculatorActionPerformed(evt);
+            }
+        });
+
+        Browser.setBackground(new java.awt.Color(0, 102, 102));
+        Browser.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
+        Browser.setForeground(new java.awt.Color(255, 255, 255));
+        Browser.setText("Browser");
+        Browser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BrowserActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout tab8Layout = new javax.swing.GroupLayout(tab8);
+        tab8.setLayout(tab8Layout);
+        tab8Layout.setHorizontalGroup(
+            tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tab8Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(Notepad, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addComponent(Calculator, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(Browser, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
+        );
+        tab8Layout.setVerticalGroup(
+            tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab8Layout.createSequentialGroup()
+                .addContainerGap(209, Short.MAX_VALUE)
+                .addGroup(tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(Browser, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                    .addGroup(tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(Calculator, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                        .addComponent(Notepad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(183, 183, 183))
+        );
+
+        Dashboard.add(tab8, "card2");
 
         getContentPane().add(Dashboard, java.awt.BorderLayout.CENTER);
 
@@ -218,35 +620,171 @@ public class Dashboard extends javax.swing.JFrame {
     public void ChangeColor(JPanel hover, Color rand){
         hover.setBackground(rand);
     }
-    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_closeMouseClicked
+    private void DetailTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DetailTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab2);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_DetailTabMouseClicked
 
-    private void closeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseEntered
-        ChangeColor(ButtonClose , new Color(25,29,74));
-    }//GEN-LAST:event_closeMouseEntered
+    private void AttendanceTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AttendanceTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab3);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_AttendanceTabMouseClicked
 
-    private void closeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseExited
-        ChangeColor(ButtonClose , new Color(5,10,46));
-    }//GEN-LAST:event_closeMouseExited
+    private void AttendanceDetailTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AttendanceDetailTabMouseClicked
+       Dashboard.removeAll();
+        Dashboard.add(tab4);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_AttendanceDetailTabMouseClicked
 
-    private void maxMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maxMouseEntered
-        ChangeColor(ButtonMax , new Color(25,29,74));
-    }//GEN-LAST:event_maxMouseEntered
+    private void ExamTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExamTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab5);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_ExamTabMouseClicked
 
-    private void maxMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maxMouseExited
-        ChangeColor(ButtonMax , new Color(5,10,46));
-    }//GEN-LAST:event_maxMouseExited
+    private void UpdateTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdateTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab6);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_UpdateTabMouseClicked
 
-    private void maxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maxMouseClicked
-      /*  if(this.getExtendedState()!=Dashboard.MAXIMIZED_BOTH){
-            this.setExtendedState(Dashboard.MAXIMIZED_BOTH);
-        }
-        else{
-            this.setExtendedState(Dashboard.NORMAL);
-        }*/
-       
-    }//GEN-LAST:event_maxMouseClicked
+    private void FeeTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FeeTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab7);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_FeeTabMouseClicked
+
+    private void MoreTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MoreTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab8);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_MoreTabMouseClicked
+
+    private void AboutTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AboutTabMouseClicked
+     AboutUs au = new AboutUs();
+     au.setVisible(true);
+    }//GEN-LAST:event_AboutTabMouseClicked
+
+    private void DetailTabMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DetailTabMouseEntered
+        
+    }//GEN-LAST:event_DetailTabMouseEntered
+
+    private void MenuTabMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuTabMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuTabMouseExited
+
+    private void MenuTabMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuTabMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuTabMouseEntered
+
+    private void MenuTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuTabMouseClicked
+        Dashboard.removeAll();
+        Dashboard.add(tab1);
+        Dashboard.repaint();
+        Dashboard.revalidate();
+    }//GEN-LAST:event_MenuTabMouseClicked
+
+    private void addBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtn1ActionPerformed
+        AddTeacher a = new AddTeacher();
+        a.setVisible(true);
+    }//GEN-LAST:event_addBtn1ActionPerformed
+
+    private void addBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtn2ActionPerformed
+        StudentAddmission s = new StudentAddmission();
+        s.setVisible(true);
+    }//GEN-LAST:event_addBtn2ActionPerformed
+
+    private void DetailBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DetailBtn1ActionPerformed
+        StudentDetails sd= new StudentDetails();
+        sd.setVisible(true);
+    }//GEN-LAST:event_DetailBtn1ActionPerformed
+
+    private void AttendanceBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceBtn1ActionPerformed
+       Attendance st= new Attendance();
+        st.setVisible(true);
+    }//GEN-LAST:event_AttendanceBtn1ActionPerformed
+
+    private void AttendanceDetailBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceDetailBtn1ActionPerformed
+        AttendanceDetails ad = new AttendanceDetails();
+        ad.setVisible(true);
+    }//GEN-LAST:event_AttendanceDetailBtn1ActionPerformed
+
+    private void AttendanceDetailBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceDetailBtn2ActionPerformed
+        AttendanceDetails ads = new AttendanceDetails();
+        ads.setVisible(true);
+    }//GEN-LAST:event_AttendanceDetailBtn2ActionPerformed
+
+    private void ExamDetailBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExamDetailBtnActionPerformed
+        Examination e = new Examination();
+        e.setVisible(true);
+    }//GEN-LAST:event_ExamDetailBtnActionPerformed
+
+    private void UpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtn1ActionPerformed
+        UpdateDetails u = new UpdateDetails();
+        u.f.setVisible(true);
+    }//GEN-LAST:event_UpdateBtn1ActionPerformed
+
+    private void UpdateBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtn2ActionPerformed
+        UpdateDetails u = new UpdateDetails();
+        u.f.setVisible(true);
+    }//GEN-LAST:event_UpdateBtn2ActionPerformed
+
+    private void FeeBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeeBtn1ActionPerformed
+       FeeStructure fs =new FeeStructure();
+       fs.setVisible(true);
+    }//GEN-LAST:event_FeeBtn1ActionPerformed
+
+    private void FormBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FormBtn2ActionPerformed
+        StudentFeeForm sff = new StudentFeeForm();
+        sff.setVisible(true);
+    }//GEN-LAST:event_FormBtn2ActionPerformed
+
+    private void NotepadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NotepadActionPerformed
+        try{
+            Runtime.getRuntime().exec("notepad.exe");
+        }catch(Exception e){}
+    }//GEN-LAST:event_NotepadActionPerformed
+
+    private void DetailBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DetailBtn2ActionPerformed
+       TeacherDetails t = new TeacherDetails();
+       t.setVisible(true);
+    }//GEN-LAST:event_DetailBtn2ActionPerformed
+
+    private void AttendanceBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceBtn2ActionPerformed
+        Attendance sta = new Attendance();
+        sta.setVisible(true);
+    }//GEN-LAST:event_AttendanceBtn2ActionPerformed
+
+    private void MarksBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MarksBtnActionPerformed
+        EnterMarks em = new EnterMarks();
+        em.setVisible(true);
+    }//GEN-LAST:event_MarksBtnActionPerformed
+
+    private void CalculatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculatorActionPerformed
+        try{
+            Runtime.getRuntime().exec("calc.exe");
+        }catch(Exception e){}
+    }//GEN-LAST:event_CalculatorActionPerformed
+
+    private void BrowserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BrowserActionPerformed
+        try{
+            Runtime.getRuntime().exec("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+        }catch(Exception e){}
+    }//GEN-LAST:event_BrowserActionPerformed
+
+    private void ExitTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitTabMouseClicked
+        Exit ex = new Exit();
+        ex.setVisible(true);
+    }//GEN-LAST:event_ExitTabMouseClicked
 
     /**
      * @param args the command line arguments
@@ -285,27 +823,45 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ButtonClose;
-    private javax.swing.JPanel ButtonMax;
-    private javax.swing.JPanel ButtonMin;
+    private javax.swing.JLabel AboutTab;
+    private javax.swing.JButton AttendanceBtn1;
+    private javax.swing.JButton AttendanceBtn2;
+    private javax.swing.JButton AttendanceDetailBtn1;
+    private javax.swing.JButton AttendanceDetailBtn2;
+    private javax.swing.JLabel AttendanceDetailTab;
+    private javax.swing.JLabel AttendanceTab;
+    private javax.swing.JButton Browser;
+    private javax.swing.JButton Calculator;
     private javax.swing.JPanel Dashboard;
-    private javax.swing.JPanel IconMinMaxClose;
-    private javax.swing.JPanel MenuHide;
+    private javax.swing.JButton DetailBtn1;
+    private javax.swing.JButton DetailBtn2;
+    private javax.swing.JLabel DetailTab;
+    private javax.swing.JButton ExamDetailBtn;
+    private javax.swing.JLabel ExamTab;
+    private javax.swing.JLabel ExitTab;
+    private javax.swing.JButton FeeBtn1;
+    private javax.swing.JLabel FeeTab;
+    private javax.swing.JButton FormBtn2;
+    private javax.swing.JLabel Heading;
+    private javax.swing.JButton MarksBtn;
     private javax.swing.JPanel MenuIcons;
-    private javax.swing.JLabel close;
+    private javax.swing.JLabel MenuTab;
+    private javax.swing.JLabel MoreTab;
+    private javax.swing.JButton Notepad;
+    private javax.swing.JButton UpdateBtn1;
+    private javax.swing.JButton UpdateBtn2;
+    private javax.swing.JLabel UpdateTab;
+    private javax.swing.JButton addBtn1;
+    private javax.swing.JButton addBtn2;
     private javax.swing.JPanel header;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel max;
     private javax.swing.JPanel menu;
-    private javax.swing.JLabel min;
+    private javax.swing.JPanel tab1;
+    private javax.swing.JPanel tab2;
+    private javax.swing.JPanel tab3;
+    private javax.swing.JPanel tab4;
+    private javax.swing.JPanel tab5;
+    private javax.swing.JPanel tab6;
+    private javax.swing.JPanel tab7;
+    private javax.swing.JPanel tab8;
     // End of variables declaration//GEN-END:variables
 }

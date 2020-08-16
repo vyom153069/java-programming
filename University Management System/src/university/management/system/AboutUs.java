@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 package university.management.system;
-
+import javax.swing.JFrame;
 /**
  *
  * @author Bhuvnesh Kumar
  */
-public class AboutUs {
+public class AboutUs extends JFrame {
     
 }

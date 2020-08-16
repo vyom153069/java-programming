@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package university.management.system;
-
+import javax.swing.JFrame;
 /**
  *
  * @author Bhuvnesh Kumar
  */
-public class Attendance {
+public class Attendance extends JFrame {
+    //JFrame f;
     
 }

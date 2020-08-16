@@ -10,5 +10,9 @@ package university.management.system;
  * @author Bhuvnesh Kumar
  */
 public class StudentAddmission {
+
+    void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
