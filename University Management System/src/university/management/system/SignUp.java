@@ -112,7 +112,7 @@ public class Signup extends JFrame implements ActionListener{
     
     public void actionPerformed(ActionEvent ae){
         try{
-            conn con = new conn();
+            Conn con = new Conn();
             
             if(ae.getSource() == b1){
                 String sql = "insert into account(username, name, password, sec_q, sec_ans) values(?, ?, ?, ?, ?)";
