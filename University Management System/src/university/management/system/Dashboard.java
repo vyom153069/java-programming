@@ -2,19 +2,46 @@
 package university.management.system;
 
 
-import java.awt.Color;
-
-import javax.swing.JPanel;
-
-
-
 public class Dashboard extends javax.swing.JFrame {
+    public static void main(String args[]) {
+        
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Dashboard().setVisible(true);
+            }
+        });
+    }
 
     /**
      * Creates new form Dashboard
      */
     public Dashboard() {
         initComponents();
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -68,6 +95,7 @@ public class Dashboard extends javax.swing.JFrame {
         Browser = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         header.setBackground(new java.awt.Color(15, 19, 52));
         header.setPreferredSize(new java.awt.Dimension(800, 50));
@@ -226,7 +254,7 @@ public class Dashboard extends javax.swing.JFrame {
         Dashboard.setLayout(new java.awt.CardLayout());
 
         tab1.setBackground(new java.awt.Color(15, 19, 42));
-        tab1.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab1.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         addBtn1.setBackground(new java.awt.Color(0, 102, 102));
         addBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -253,26 +281,26 @@ public class Dashboard extends javax.swing.JFrame {
         tab1Layout.setHorizontalGroup(
             tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab1Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addGap(336, 336, 336)
                 .addComponent(addBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(163, 163, 163)
                 .addComponent(addBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(118, Short.MAX_VALUE))
+                .addGap(336, 336, 336))
         );
         tab1Layout.setVerticalGroup(
             tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab1Layout.createSequentialGroup()
-                .addContainerGap(209, Short.MAX_VALUE)
+            .addGroup(tab1Layout.createSequentialGroup()
+                .addGap(266, 266, 266)
                 .addGroup(tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(183, 183, 183))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
 
         Dashboard.add(tab1, "card2");
 
         tab2.setBackground(new java.awt.Color(15, 19, 42));
-        tab2.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab2.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         DetailBtn1.setBackground(new java.awt.Color(0, 102, 102));
         DetailBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -291,7 +319,6 @@ public class Dashboard extends javax.swing.JFrame {
         DetailBtn2.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
         DetailBtn2.setForeground(new java.awt.Color(255, 255, 255));
         DetailBtn2.setLabel("Teacher ");
-        DetailBtn2.setPreferredSize(new java.awt.Dimension(128, 127));
         DetailBtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DetailBtn2ActionPerformed(evt);
@@ -303,26 +330,26 @@ public class Dashboard extends javax.swing.JFrame {
         tab2Layout.setHorizontalGroup(
             tab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab2Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addGap(336, 336, 336)
                 .addComponent(DetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(DetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(121, Short.MAX_VALUE))
+                .addGap(173, 173, 173)
+                .addComponent(DetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(336, 336, 336))
         );
         tab2Layout.setVerticalGroup(
             tab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab2Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
+                .addContainerGap(295, Short.MAX_VALUE)
                 .addGroup(tab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(DetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(197, Short.MAX_VALUE))
+                    .addComponent(DetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(295, Short.MAX_VALUE))
         );
 
         Dashboard.add(tab2, "card2");
 
         tab3.setBackground(new java.awt.Color(15, 19, 42));
-        tab3.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab3.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         AttendanceBtn1.setBackground(new java.awt.Color(0, 102, 102));
         AttendanceBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -349,20 +376,20 @@ public class Dashboard extends javax.swing.JFrame {
         tab3Layout.setHorizontalGroup(
             tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab3Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addContainerGap(340, Short.MAX_VALUE)
                 .addComponent(AttendanceBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(AttendanceBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addGap(163, 163, 163)
+                .addComponent(AttendanceBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(336, 336, 336))
         );
         tab3Layout.setVerticalGroup(
             tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(tab3Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
-                .addGroup(tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(AttendanceBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AttendanceBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-                .addContainerGap(202, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab3Layout.createSequentialGroup()
+                .addGap(266, 266, 266)
+                .addGroup(tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AttendanceBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AttendanceBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(266, 266, 266))
         );
 
         AttendanceBtn1.getAccessibleContext().setAccessibleName("");
@@ -370,7 +397,7 @@ public class Dashboard extends javax.swing.JFrame {
         Dashboard.add(tab3, "card2");
 
         tab4.setBackground(new java.awt.Color(15, 19, 42));
-        tab4.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab4.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         AttendanceDetailBtn1.setBackground(new java.awt.Color(0, 102, 102));
         AttendanceDetailBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -397,26 +424,26 @@ public class Dashboard extends javax.swing.JFrame {
         tab4Layout.setHorizontalGroup(
             tab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab4Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addContainerGap(350, Short.MAX_VALUE)
                 .addComponent(AttendanceDetailBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(163, 163, 163)
                 .addComponent(AttendanceDetailBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addGap(336, 336, 336))
         );
         tab4Layout.setVerticalGroup(
             tab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab4Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
+                .addGap(266, 266, 266)
                 .addGroup(tab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(AttendanceDetailBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                     .addComponent(AttendanceDetailBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-                .addGap(163, 163, 163))
+                .addGap(266, 266, 266))
         );
 
         Dashboard.add(tab4, "card3");
 
         tab5.setBackground(new java.awt.Color(15, 19, 42));
-        tab5.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab5.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         ExamDetailBtn.setBackground(new java.awt.Color(0, 102, 102));
         ExamDetailBtn.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -443,26 +470,26 @@ public class Dashboard extends javax.swing.JFrame {
         tab5Layout.setHorizontalGroup(
             tab5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab5Layout.createSequentialGroup()
-                .addGap(125, 125, 125)
+                .addContainerGap(346, Short.MAX_VALUE)
                 .addComponent(ExamDetailBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
+                .addGap(163, 163, 163)
                 .addComponent(MarksBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addGap(340, 340, 340))
         );
         tab5Layout.setVerticalGroup(
             tab5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab5Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
+            .addGroup(tab5Layout.createSequentialGroup()
+                .addGap(266, 266, 266)
                 .addGroup(tab5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(MarksBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ExamDetailBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(160, 160, 160))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
 
         Dashboard.add(tab5, "card2");
 
         tab6.setBackground(new java.awt.Color(15, 19, 42));
-        tab6.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab6.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         UpdateBtn1.setBackground(new java.awt.Color(0, 102, 102));
         UpdateBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -489,26 +516,26 @@ public class Dashboard extends javax.swing.JFrame {
         tab6Layout.setHorizontalGroup(
             tab6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab6Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addGap(336, 336, 336)
                 .addComponent(UpdateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(163, 163, 163)
                 .addComponent(UpdateBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addGap(350, 350, 350))
         );
         tab6Layout.setVerticalGroup(
             tab6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab6Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
+                .addGap(266, 266, 266)
                 .addGroup(tab6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(UpdateBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                     .addComponent(UpdateBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-                .addGap(137, 137, 137))
+                .addGap(266, 266, 266))
         );
 
         Dashboard.add(tab6, "card2");
 
         tab7.setBackground(new java.awt.Color(15, 19, 42));
-        tab7.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab7.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         FeeBtn1.setBackground(new java.awt.Color(0, 102, 102));
         FeeBtn1.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -535,26 +562,26 @@ public class Dashboard extends javax.swing.JFrame {
         tab7Layout.setHorizontalGroup(
             tab7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab7Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addGap(336, 336, 336)
                 .addComponent(FeeBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(163, 163, 163)
                 .addComponent(FormBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addGap(339, 339, 339))
         );
         tab7Layout.setVerticalGroup(
             tab7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab7Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
+                .addGap(266, 266, 266)
                 .addGroup(tab7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(FeeBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                     .addComponent(FormBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-                .addGap(183, 183, 183))
+                .addGap(266, 266, 266))
         );
 
         Dashboard.add(tab7, "card2");
 
         tab8.setBackground(new java.awt.Color(15, 19, 42));
-        tab8.setPreferredSize(new java.awt.Dimension(547, 450));
+        tab8.setPreferredSize(new java.awt.Dimension(1095, 655));
 
         Notepad.setBackground(new java.awt.Color(0, 102, 102));
         Notepad.setFont(new java.awt.Font("Sitka Text", 0, 14)); // NOI18N
@@ -591,24 +618,23 @@ public class Dashboard extends javax.swing.JFrame {
         tab8Layout.setHorizontalGroup(
             tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tab8Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(239, 239, 239)
                 .addComponent(Notepad, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addGap(111, 111, 111)
                 .addComponent(Calculator, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
+                .addGap(111, 111, 111)
                 .addComponent(Browser, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
+                .addContainerGap(259, Short.MAX_VALUE))
         );
         tab8Layout.setVerticalGroup(
             tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tab8Layout.createSequentialGroup()
-                .addContainerGap(209, Short.MAX_VALUE)
-                .addGroup(tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(Browser, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                    .addGroup(tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Calculator, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                        .addComponent(Notepad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(183, 183, 183))
+            .addGroup(tab8Layout.createSequentialGroup()
+                .addGap(266, 266, 266)
+                .addGroup(tab8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Notepad, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Calculator, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Browser, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
 
         Dashboard.add(tab8, "card2");
@@ -617,9 +643,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    public void ChangeColor(JPanel hover, Color rand){
-        hover.setBackground(rand);
-    }
+    
     private void DetailTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DetailTabMouseClicked
         Dashboard.removeAll();
         Dashboard.add(tab2);
@@ -786,41 +810,7 @@ public class Dashboard extends javax.swing.JFrame {
         ex.setVisible(true);
     }//GEN-LAST:event_ExitTabMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Dashboard().setVisible(true);
-            }
-        });
-    }
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AboutTab;

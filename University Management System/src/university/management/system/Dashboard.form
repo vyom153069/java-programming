@@ -3,6 +3,9 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1920, 1080]"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -18,7 +21,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,53,0,0,3,50"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,0,0,0,5,95"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
@@ -374,7 +377,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -387,23 +390,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                       <Component id="addBtn1" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
                       <Component id="addBtn2" min="-2" pref="129" max="-2" attributes="0"/>
-                      <EmptySpace pref="118" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="209" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="addBtn1" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                           <Component id="addBtn2" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                      <EmptySpace pref="329" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -451,7 +454,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -464,23 +467,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                       <Component id="DetailBtn1" min="-2" pref="127" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="DetailBtn2" min="-2" pref="127" max="-2" attributes="0"/>
-                      <EmptySpace pref="121" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                      <Component id="DetailBtn2" min="-2" pref="128" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="295" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="DetailBtn2" alignment="3" min="-2" pref="128" max="-2" attributes="0"/>
                           <Component id="DetailBtn1" alignment="3" min="-2" pref="128" max="-2" attributes="0"/>
-                          <Component id="DetailBtn2" alignment="3" min="-2" pref="124" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="197" max="32767" attributes="0"/>
+                      <EmptySpace pref="295" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -524,9 +527,6 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="label" type="java.lang.String" value="Teacher "/>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[128, 127]"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DetailBtn2ActionPerformed"/>
@@ -540,7 +540,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -553,23 +553,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                      <EmptySpace pref="340" max="32767" attributes="0"/>
                       <Component id="AttendanceBtn1" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="AttendanceBtn2" min="-2" pref="123" max="-2" attributes="0"/>
-                      <EmptySpace pref="124" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
+                      <Component id="AttendanceBtn2" min="-2" pref="128" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="AttendanceBtn2" max="32767" attributes="0"/>
-                          <Component id="AttendanceBtn1" pref="123" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="AttendanceBtn2" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
+                          <Component id="AttendanceBtn1" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="202" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -620,7 +620,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -633,23 +633,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                      <EmptySpace pref="350" max="32767" attributes="0"/>
                       <Component id="AttendanceDetailBtn1" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
                       <Component id="AttendanceDetailBtn2" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="AttendanceDetailBtn1" alignment="3" pref="123" max="32767" attributes="0"/>
                           <Component id="AttendanceDetailBtn2" alignment="3" pref="123" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -697,7 +697,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -710,23 +710,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace pref="346" max="32767" attributes="0"/>
                       <Component id="ExamDetailBtn" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
                       <Component id="MarksBtn" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="340" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="MarksBtn" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                           <Component id="ExamDetailBtn" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+                      <EmptySpace pref="329" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -774,7 +774,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -787,23 +787,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                       <Component id="UpdateBtn1" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
                       <Component id="UpdateBtn2" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="350" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="UpdateBtn1" alignment="3" pref="123" max="32767" attributes="0"/>
                           <Component id="UpdateBtn2" alignment="3" pref="123" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -851,7 +851,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -864,23 +864,23 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
                       <Component id="FeeBtn1" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
                       <Component id="FormBtn2" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="339" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="FeeBtn1" alignment="3" pref="123" max="32767" attributes="0"/>
                           <Component id="FormBtn2" alignment="3" pref="123" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -928,7 +928,7 @@
               <Color blue="2a" green="13" red="f" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[547, 450]"/>
+              <Dimension value="[1095, 655]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -941,28 +941,26 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="239" max="-2" attributes="0"/>
                       <Component id="Notepad" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace pref="44" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                       <Component id="Calculator" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                       <Component id="Browser" min="-2" pref="129" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <EmptySpace pref="259" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="209" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="Browser" pref="123" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="Calculator" pref="123" max="32767" attributes="0"/>
-                              <Component id="Notepad" max="32767" attributes="0"/>
-                          </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Notepad" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
+                          <Component id="Calculator" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
+                          <Component id="Browser" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                      <EmptySpace pref="329" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
