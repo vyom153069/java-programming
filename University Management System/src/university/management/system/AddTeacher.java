@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package university.management.system;
 
-/**
- *
- * @author Bhuvnesh Kumar
- */
-public class AddTeacher {
-    
+package university.management.system;
+import javax.swing.JFrame;
+
+public class AddTeacher extends JFrame{
+    public static void main(String[] args){
+        
+    }
+
+   // static class setVisible extends JFrame{
+
+        //public setVisible(boolean b) {
+           
+       // }
+   // }
+
 }
