@@ -95,14 +95,13 @@ public class Dashboard extends javax.swing.JFrame {
         Browser = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         header.setBackground(new java.awt.Color(15, 19, 52));
         header.setPreferredSize(new java.awt.Dimension(800, 50));
         header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Heading.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        Heading.setForeground(new java.awt.Color(0, 102, 102));
+        Heading.setForeground(new java.awt.Color(0, 153, 255));
         Heading.setText("DASHBOARD");
         header.add(Heading, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 166, -1));
 
@@ -719,12 +718,12 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void addBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtn1ActionPerformed
         AddTeacher a = new AddTeacher();
-        a.setVisible(true);
+        a.f.setVisible(true);
     }//GEN-LAST:event_addBtn1ActionPerformed
 
     private void addBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtn2ActionPerformed
         StudentAddmission s = new StudentAddmission();
-        s.setVisible(true);
+        s.f.setVisible(true);
     }//GEN-LAST:event_addBtn2ActionPerformed
 
     private void DetailBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DetailBtn1ActionPerformed
@@ -806,11 +805,9 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_BrowserActionPerformed
 
     private void ExitTabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitTabMouseClicked
-        Exit ex = new Exit();
-        ex.setVisible(true);
+        System.exit(0);
     }//GEN-LAST:event_ExitTabMouseClicked
 
- 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AboutTab;
