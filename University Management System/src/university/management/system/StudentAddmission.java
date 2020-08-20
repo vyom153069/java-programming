@@ -61,7 +61,7 @@ class StudentAddmission implements ActionListener{
         t3.setBounds(200, 200, 150, 30);
         lb15.add(t3);
 
-        lb4 = new JLabel("DOB(yyyy/mm/dd):");
+        lb4 = new JLabel("DOB(yyyy-mm-dd):");
         lb4.setBounds(400, 200, 250, 30);
         lb4.setFont(new Font("Sitka Text", Font.BOLD, 18));
         lb15.add(lb4);
