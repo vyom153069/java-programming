@@ -11,7 +11,9 @@ public class AboutUs extends javax.swing.JFrame {
      * Creates new form AboutUs
      */
     public AboutUs() {
+        super("About Us");
         initComponents();
+        
     }
 
     /**
@@ -73,7 +75,7 @@ public class AboutUs extends javax.swing.JFrame {
         jTextArea2.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jTextArea2.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea2.setRows(5);
-        jTextArea2.setText(" \n Under Mentorship Of:\n   - Vyom Chandra Gallani\n   - Sanchit\n Participants:\n   - Shikha Rajpoot\n   - Sanya Gupta");
+        jTextArea2.setText(" \n Under Mentorship Of:\n   - Vyom Chandra Gallani\n   - Sanjana Jha\n Participants:\n   - Shikha Rajpoot\n   - Sanya Gupta");
         jTextArea2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane2.setViewportView(jTextArea2);
 
@@ -95,6 +97,7 @@ public class AboutUs extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
