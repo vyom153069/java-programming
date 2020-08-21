@@ -35,8 +35,6 @@ public class AboutUs extends javax.swing.JFrame {
         jTextArea2 = new javax.swing.JTextArea();
         BGimg = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         heading.setFont(new java.awt.Font("Sitka Text", 1, 36)); // NOI18N
