@@ -25,7 +25,7 @@ public class TeacherAttendance extends JFrame implements ActionListener{
         
         c2 = new Choice();
         try{
-            conn c = new conn();
+            Conn c = new Conn();
             ResultSet rs = c.s.executeQuery("select * from teacher");
             while(rs.next()){
                 c2.add(rs.getString("emp_id"));    
@@ -120,7 +120,7 @@ public class TeacherAttendance extends JFrame implements ActionListener{
         String qry = "insert into attendance_teacher values("+ id +",'"+dt+"','"+f+"','"+s+"')";
        
         try{
-            conn c1 = new conn();
+            Conn c1 = new Conn();
             c1.s.executeUpdate(qry);
             JOptionPane.showMessageDialog(null,"Attendance confirmed");
             this.setVisible(false);
