@@ -23,7 +23,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
 	contentPane.setLayout(null);
         c2 = new Choice();
         try{
-            conn c = new conn();
+            Conn c = new Conn();
             ResultSet rs = c.s.executeQuery("select * from student");
             while(rs.next()){
                 c2.add(rs.getString("rollno"));    
@@ -33,7 +33,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
        }catch(Exception e){ }
        
           l0=new JLabel("Select Roll Number");
-        l0.setForeground(new Color(15,19,42));
+        l0.setForeground(Color.BLACK);
 	l0.setFont(new Font("sitka text",Font.BOLD,17));
 	l0.setBounds(80, 80, 185, 26);
 	contentPane.add(l0);
@@ -45,7 +45,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
         add(c2);
       
         l1 = new JLabel("First Half");
-        l1.setForeground(new Color(15,19,42));
+        l1.setForeground(Color.BLACK);
 	l1.setFont(new Font("sitka text",Font.BOLD,17));
 	 l1.setBounds(80, 171, 185, 26);
         
@@ -60,7 +60,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
         add(fh);
         
         l2 = new JLabel("Second Half");
-        l2.setForeground(new Color(15,19,42));
+        l2.setForeground(Color.BLACK);
 	l2.setFont(new Font("sitka text",Font.BOLD,17));
 	l2.setBounds(80, 262, 185, 26);
 	contentPane.add(l2);
@@ -116,7 +116,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
         String qry = "insert into attendance_student values("+ id +",'"+dt+"','"+f+"','"+s+"')";
        
         try{
-            conn c1 = new conn();
+            Conn c1 = new Conn();
             c1.s.executeUpdate(qry);
             JOptionPane.showMessageDialog(null,"Attendance confirmed");
             this.setVisible(false);
