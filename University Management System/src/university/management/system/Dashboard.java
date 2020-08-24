@@ -752,12 +752,12 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_ExamDetailBtnActionPerformed
 
     private void UpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtn1ActionPerformed
-        UpdateDetails u = new UpdateDetails();
+        updateStudentDetail u = new updateStudentDetail();
         u.f.setVisible(true);
     }//GEN-LAST:event_UpdateBtn1ActionPerformed
 
     private void UpdateBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtn2ActionPerformed
-        UpdateDetails u = new UpdateDetails();
+        updateTeacherDetails u = new updateTeacherDetails();
         u.f.setVisible(true);
     }//GEN-LAST:event_UpdateBtn2ActionPerformed
 
