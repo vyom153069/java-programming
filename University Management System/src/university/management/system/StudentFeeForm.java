@@ -178,6 +178,7 @@ public class StudentFeeForm extends JFrame implements ActionListener{
 	contentPane.add(panel);
 
     }
+
     
     public void actionPerformed(ActionEvent ae){
         try{
