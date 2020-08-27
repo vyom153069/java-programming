@@ -94,7 +94,7 @@ public class Examination extends JFrame implements ActionListener {
         contentPane.add(l3);
 
         JPanel panel = new JPanel();
-        panel.setBorder(new TitledBorder(new LineBorder(new Color(20, 107, 202), 3, true), "Book-Details",
+        panel.setBorder(new TitledBorder(new LineBorder(new Color(20, 107, 202), 3, true), "Student-Details",
                 TitledBorder.LEADING, TitledBorder.TOP, null, new Color(59, 174, 239)));
         panel.setBounds(67, 54, 1100, 368);
         contentPane.add(panel);
