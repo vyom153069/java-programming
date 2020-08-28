@@ -1,5 +1,6 @@
 package university.management.system;
 
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -353,7 +354,7 @@ public class FeeStructure extends JFrame{
         getContentPane().setBackground(Color.WHITE);
         setVisible(true);
     }
-    
+
     public static void main(String[] args){
         new FeeStructure().setVisible(true);
     }

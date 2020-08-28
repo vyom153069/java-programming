@@ -27,14 +27,14 @@ public class Login extends JFrame implements ActionListener{
 
         l1 = new JLabel("Username");
         l1.setBounds(150,40,100,30);
-           l1.setFont(new Font("sitka text",Font.BOLD,17));
-         l1.setForeground(new Color(15,19,42));
+        l1.setFont(new Font("sitka text",Font.BOLD,17));
+        l1.setForeground(Color.black);
         add(l1);
         
         l2 = new JLabel("Password");
         l2.setBounds(150,90,100,30);
          l2.setFont(new Font("sitka text",Font.BOLD,17));
-         l2.setForeground(new Color(15,19,42));
+         l2.setForeground(Color.black);
         add(l2);
  
         t1=new JTextField();
@@ -61,7 +61,7 @@ public class Login extends JFrame implements ActionListener{
         b2=new JButton("Signup");
         b2.setBounds(340,160,120,40);
         b2.setFont(new Font("sitka text",Font.BOLD,17));
-       b2.setBackground(new Color(15,19,42));
+        b2.setBackground(new Color(15,19,42));
         b2.setForeground(Color.WHITE);
         add(b2);
 
