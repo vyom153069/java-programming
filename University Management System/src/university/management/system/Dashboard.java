@@ -732,17 +732,17 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_DetailBtn1ActionPerformed
 
     private void AttendanceBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceBtn1ActionPerformed
-       Attendance st= new Attendance();
+       StudentAttendance st= new StudentAttendance();
         st.setVisible(true);
     }//GEN-LAST:event_AttendanceBtn1ActionPerformed
 
     private void AttendanceDetailBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceDetailBtn1ActionPerformed
-        AttendanceDetails ad = new AttendanceDetails();
+        StudentAttendanceDetail ad = new StudentAttendanceDetail();
         ad.setVisible(true);
     }//GEN-LAST:event_AttendanceDetailBtn1ActionPerformed
 
     private void AttendanceDetailBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceDetailBtn2ActionPerformed
-        AttendanceDetails ads = new AttendanceDetails();
+        TeacherAttendanceDetail ads = new TeacherAttendanceDetail();
         ads.setVisible(true);
     }//GEN-LAST:event_AttendanceDetailBtn2ActionPerformed
 
@@ -783,7 +783,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_DetailBtn2ActionPerformed
 
     private void AttendanceBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AttendanceBtn2ActionPerformed
-        Attendance sta = new Attendance();
+        TeacherAttendance sta = new TeacherAttendance();
         sta.setVisible(true);
     }//GEN-LAST:event_AttendanceBtn2ActionPerformed
 
