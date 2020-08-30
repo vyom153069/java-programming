@@ -1,5 +1,10 @@
 # UNIVERSITY MANAGEMENT SYSTEM
 
+### Here's a Demo of University Management System:
+ 
+ ![umslast](https://user-images.githubusercontent.com/64718956/91656033-09b3d180-ead3-11ea-933d-6c8f17cf40c0.gif)
+
+
 ## Introduction:
 
 University Management System is easy-to-use web-based software that automates the registration of students and teachers processes in university/college.
@@ -31,6 +36,7 @@ and administrative purposes.
     ![gitbash](https://user-images.githubusercontent.com/64718956/91656099-89da3700-ead3-11ea-840b-4843ce3de45e.png)
 
 
+
 ## Requirements:
 
 1. You can't run JAR files without Java installed on your computer. So make sure that JAVA is installed on your computer.
@@ -52,9 +58,15 @@ To run this JAR file make sure that JAVA is properly installed on your system
  
  -----That's All-----
  
+ ### Contributors:
  
- # Here's a Demo of University Management System:
- 
- ![umslast](https://user-images.githubusercontent.com/64718956/91656033-09b3d180-ead3-11ea-933d-6c8f17cf40c0.gif)
+- Shikha Rajpoot.
+- Sanya Gupta.
 
+### Mentors: 
+ 
+- Vyom Chandra Gallani.
+- Sanjana Jha.
+
+## Project developed under The Uplift Project program.
 
