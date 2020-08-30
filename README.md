@@ -25,7 +25,7 @@ and administrative purposes.
   ![image](https://user-images.githubusercontent.com/64718956/91655966-62cf3580-ead2-11ea-8933-50643b036630.png)
 
 * For Git Bash Users:
-  * Go to any location , right click => open git bash here (if you're using git bash).
+  * Go to any location , right click => open git bash here.
   Write Command:- git clone https://github.com/vyom153069/java-programming.git
     
     ![gitbash](https://user-images.githubusercontent.com/64718956/91656099-89da3700-ead3-11ea-840b-4843ce3de45e.png)
